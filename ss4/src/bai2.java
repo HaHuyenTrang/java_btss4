@@ -9,17 +9,19 @@ public class bai2 {
             System.out.println("không phải số nguyên tố!");
 
         } else {
-            // Math.sqrt(n) trong Java là hàm tính căn bậc hai của số n.
+            boolean isPrime = true;
             for (int i = 2; i <= Math.sqrt(n); i++) {
                 if (n % i == 0) {
-                    System.out.println("số nguyên tố!");
-                    break;
-                }else {
-                    System.out.println("không phải số nguyên tố!");
+                    isPrime = false;
+                    break; // Không cần kiểm tra thêm, vì đã xác định không phải số nguyên tố
                 }
-                break;
             }
 
+            if (isPrime) {
+                System.out.println(n + " là số nguyên tố!");
+            } else {
+                System.out.println(n + " không phải số nguyên tố!");
+            }
         }
     }
 }

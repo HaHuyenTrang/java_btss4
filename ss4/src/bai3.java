@@ -9,7 +9,7 @@ public class bai3 {
             System.out.println("n không hợp lệ");
         }
         int result =0;
-        for(int i=0;i<=10;i++){
+        for(int i=1;i<=10;i++){
             result= n *i;
             System.out.println(+n+ " * "+i+ " = " +result);
 

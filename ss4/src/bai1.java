@@ -11,7 +11,7 @@ public class bai1 {
         int result = 0;
         for(int i=1;i<=n;i++){
             result += i;
-            break;
+
         }
         System.out.println("tổng các số từ 1 đến "+n+ " = " +result );
     }
